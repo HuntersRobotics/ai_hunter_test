@@ -17,7 +17,7 @@ make -j
 ## Program sending, candump receiving
 - First terminal
 ```bash
-candump -X can1
+candump -x can1
 ```
 > Detect data received by can1
 - Second terminal
@@ -34,3 +34,4 @@ candump -X can1
 - Second terminal
 ```bash
 cansend can1 123#DEADBEEF
+```
