@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.22)
+project(CAN)
+
+set(CMAKE_CXX_STANDARD 20)
+find_package(kaylordut REQUIRED)
+
+add_executable(send main.cpp can/driver_can.cpp)
+target_link_libraries(send PRIVATE ${kaylordut_LIBS})
